@@ -1,0 +1,137 @@
+    .main-nav {
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: sans-serif;
+    }
+    
+    .main-nav>img {
+        height: 40px;
+        width: 120px;
+    }
+    
+    .main-nav>button {
+        height: 40px;
+        width: 120px;
+        background-color: orangered;
+        color: white;
+        outline: none;
+        border-radius: 10px;
+        border: 1px solid red;
+    }
+    
+    .main-nav>button:hover {
+        height: 40px;
+        cursor: pointer;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .main-nav>ul>h1 {
+        font-size: 24px;
+        font-style: italic;
+        font-weight: bold;
+        position: relative;
+        left: 10px;
+        top: 20px;
+    }
+    
+    .main-nav>ul:nth-of-type(2) {
+        color: white;
+    }
+    
+    .account {
+        visibility: hidden;
+    }
+    
+    .services {
+        visibility: hidden;
+    }
+    
+    .accountShow {
+        list-style-type: none;
+        visibility: visible;
+        position: relative;
+        top: 20px;
+        left: 5px;
+        width: 80px;
+        height: 40px;
+    }
+    
+    .accountShow>li>a {
+        text-decoration: none;
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+    
+    .accountShow>li {
+        padding-bottom: 5px;
+    }
+    
+    #log,
+    #serve {
+        color: black;
+        position: relative;
+    }
+    
+    #log {
+        top: 20px;
+    }
+    
+    #log:hover {
+        cursor: pointer;
+    }
+    
+    #serve {
+        top: 40px;
+    }
+    
+    #cart {
+        color: black;
+        text-decoration: none;
+    }
+    
+    input {
+        width: 600px;
+        height: 40px;
+        padding-left: 40px;
+    }
+    
+    input:focus {
+        width: 600px;
+        height: 40px;
+        border: 1px solid orange;
+        outline: none;
+    }
+    
+    .second-nav-bar>ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        background-color: tomato;
+        height: 40px;
+        align-items: center;
+    }
+    
+    .second-nav-bar>ul>li>a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .fashion {
+        background-color: yellow;
+        display: none;
+        list-style-type: none;
+    }
+    
+    .body {
+        display: none;
+    }
+    
+    .bodyShow {
+        display: grid;
+    }

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobmart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Logos/cropped.jpg">
+
+</head>
+
+<body>
+    <nav class="main-nav">
+        <img src="Logos/cropped.jpg" alt="">
+        <input type="search" placeholder="Search Any Brands" id="search">
+        <button id="but"> Search</button>
+        <ul><a id="log">Login</a>
+            <ul class="account" id="acc">
+                <li>
+                    <a href="Login/signUp.html"> Sign Up</a>
+                </li>
+                <li>
+                    <a href="Login/signIn.html">Sign In</a>
+                </li>
+            </ul>
+        </ul>
+        <ul><a id="serve">Service</a>
+            <ul class="services">
+                <li>
+                    <a href="#">Customer Service (24/7)</a>
+                </li>
+                <li>
+                    <a href="#">Service Providers</a>
+                </li>
+                <li>
+                    <a href="#">
+                    Sell On Dianji
+                </a>
+                </li>
+                <li>
+                    <a href="# ">Contact Us</a>
+                </li>
+
+            </ul>
+        </ul>
+        <a href="#" id="cart">Cart</a>
+
+
+    </nav>
+    <nav class="second-nav-bar ">
+        <ul>
+            <li>
+                <a tabindex="0 ">Fashion</a>
+                <ul class="fashion ">
+                    <li>
+                        <a href="# ">Men Fashion</a>
+                    </li>
+                    <li>
+                        <a href="# ">Women Fashion</a>
+                    </li>
+                    <li>
+                        <a href="# ">Kids Fashion</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Electronics</a>
+            </li>
+            <li>
+                <a href="# "> Groceries</a>
+            </li>
+            <li>
+                <a href="# ">Phones & Tablets</a>
+            </li>
+            <li>
+                <a href="# ">Gaming</a>
+            </li>
+            <li>
+                <a href="# ">Beauty & Accessories</a>
+            </li>
+            <li>
+                <a href="# ">Home & Furniture</a>
+            </li>
+            <li>
+                <a href="# ">Go -Eatery</a>
+            </li>
+            <li>
+                <a href="dashboard/sellerDash.html " id="sell " target="_blank ">Seller Dashboard</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="banners ">
+        <p id="para "></p>
+
+    </section>
+
+
+</body>
+<script src="script.js ">
+    let link = document.querySelectorAll(".second-nav-bar>ul>li");
+    let ser = document.getElementById("search");
+    document.querySelector("button").addEventListener("click", function() {
+        for (let li = 0; li <
+            link.length; li++) {
+            if (link[li].innerText === ser.value) {
+                link[li].style.backgroundColor = "yellow";
+            }
+        }
+    })
+</script>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<style>
+    .signUp>img {
+        width: 200px;
+        height: 100px;
+        margin-bottom: 40px;
+    }
+    
+    .signUp>h1 {
+        color: red;
+        font-weight: bolder;
+    }
+    
+    .signUp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        font-family: sans-serif;
+        justify-content: center;
+        position: relative;
+        top: 60px;
+        border-radius: 50px;
+        border: 2px solid red;
+        margin: 0px 100px;
+        box-shadow: 4px 4px 4px grey;
+    }
+    
+    label {
+        color: red;
+        font-weight: bolder;
+    }
+    
+    label:nth-of-type(2) {
+        position: relative;
+        top: 20px;
+    }
+    
+    input {
+        font-style: italic;
+        padding-left: 15px;
+        height: 25px;
+        border: 2px solid red;
+        width: 170px;
+        outline: none;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        font-size: 15px;
+        margin-left: 5px;
+        font-weight: bold;
+    }
+    
+    input[type="text"] {
+        text-transform: capitalize;
+    }
+    
+    input:focus {
+        border: 2px solid orange;
+        width: 200px;
+        transition: all 1s;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        background-color: none;
+        border-bottom-right-radius: 0px;
+    }
+    
+    button {
+        position: relative;
+        background: linear-gradient( red 30%, orange);
+        width: 230px;
+        border-radius: 15px;
+        color: white;
+        font-weight: bolder;
+        outline: none;
+        height: 40px;
+        font-size: 14px;
+        border: 1px solid red;
+        margin-left: 40px;
+    }
+    
+    button:hover {
+        cursor: pointer;
+        transform: scaleX(.95);
+        transition: all 1s;
+        background: linear-gradient( orange 30%, red);
+    }
+    
+    p {
+        text-align: center;
+        position: relative;
+        left: 20px;
+    }
+    
+    p>a {
+        color: black;
+    }
+    
+    @media (min-width:500px) and (max-width:960px) {
+        .signUp {
+            top: 30px;
+            margin: 0px 50px;
+        }
+    }
+    
+    @media (min-width:0px) and (max-width:400px) {
+        .signUp {
+            top: 30px;
+            margin: 0px 0px;
+        }
+    }
+</style>
+
+
+<body>
+    <section>
+        <div class="signUp">
+            <img src="../Logos/cropped.jpg" alt="">
+            <h1>WELCOME! TEMPLE</h1>
+            <form action="login.php" method="post">
+                <label for="Uname">USERNAME:<input type="text" name="UserName" id="Uname" placeholder="Enter Username" required></label><br>
+                <label for="pwd">PASSWORD:<input type="password" name="pwd" id="pwd" placeholder="Enter Password" required></label><br><br><br><br>
+                <button type="submit"> LOG IN</button><br>
+                <p><a href="#Reset">Forgot Password?</a></p>
+                <p>Dont Have An Account <br><a href="signup.html">REGISTER HERE</a></p>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
