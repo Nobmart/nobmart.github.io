@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>    
+    <meta charset="UTF-8">
+    <title>Nobmart Launch</title>
+    <meta name="author" content="Chinaza Ugwuoke">
+    
+    <!-- Mobile Specific Meta -->   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/timerStyles.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+  
+  
+ <body>
+ <div class="bg">
+	 <div class="bg-color">
+	 
+		  <div class="container content">
+				<div class="row">
+					<div class="blazer clearfix">
+						<div class="col-sm-12">
+						   <h1 id="nobmart">Nobmart</h1>
+						   <h2 id="jump">Jump In To View Our Products & Services...</h2>
+						   <h3>We will be launching our main site when the countdown is done</h3>        
+						</div>
+						 
+						<div id="right-block" class="col-sm-12 text-center">
+							<div class="row">
+							   <div class="col-sm-offset-1 col-sm-10">
+									<div class="timing">
+										<div id="count-down" data-date="2022-03-25 00:00:00">
+										</div>
+									</div>
+							   </div>
+							</div>
+						                  							
+							<div class="row">
+								<div class="col-sm-12 text-center copyRights"> Copyright 2022 | <a id="noblink"href="http://nobmart.com">Nobmart.com</a>
+								</div>
+							</div>								
+						</div>
+					</div>
+				</div>
+			</div>
+			
+	 </div>
+ </div>
+   
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/timerStyles.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+	
+    <script type="text/javascript">
+    	$(function() {
+				// Invoke the plugin
+				$('input, textarea').placeholder();
+			});
+    </script>
+	
+    <script>
+      $("#count-down").TimeCircles(
+       {   
+           circle_bg_color: "#8a7f71",
+           use_background: true,
+           bg_width: 1.0,
+           fg_width: 0.02,
+           time: {
+                Days: { color: "red" },
+                Hours: { color: "red" },
+                Minutes: { color: "red" },
+                Seconds: { color: "red" }
+            }
+       }
+    );
+
+    </script>
+    
+  </body>
+  
+</html>

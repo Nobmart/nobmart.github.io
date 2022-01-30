@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Administrators Dashboard for Nobmart Digital marketing Services">
+    <meta name="author" content="Chinaza Ugwuoke">
+    <title>Nobmart | Admin</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+  </head>
+  
+  
+
+
+
+  <body>
+  
+    <div id="wrapper">
+      
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper2">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand"><a href="http://nobmart.com">Nobmart Digital Market</a></li><hr>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Statistics</a></li>
+		  <li><a href="#">Reviews</a></li>
+		  <li><a href="#">Sellers</a></li>
+		  <li><a href="#">Transactions</a></li><hr>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+          
+      
+      <div id="page-content-wrapper">
+        <div class="content-header2">
+          <h1  id="firstText2" >
+            <a id="menu-toggle" href="#" class="btn btn-default">
+				<img id="imgToggle" src="menu2.png"/>
+			</a>
+            Nobmart Admin
+          </h1>
+        </div>
+        <!-- The page content is here -->
+        <div class="page-content inset">
+		
+		  <div class="col-lg-3">
+            <div class="panel panel-success">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <i class="fa fa-comments fa-5x"></i>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <p class="announcement-heading" style="font-size:60px;">14</p>
+                    <p class="announcement-text">New Orders!</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#">
+                <div class="panel-footer announcement-bottom">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      Complete Orders
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+		  <div class="col-lg-3">
+            <div class="panel panel-success">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <i class="fa fa-comments fa-5x"></i>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <p class="announcement-heading" style="font-size:60px;">$31</p>
+                    <p class="announcement-text">Total Sales!</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#">
+                <div class="panel-footer announcement-bottom">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      Returned Items
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+		  <div class="col-lg-3">
+            <div class="panel panel-success">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <i class="fa fa-comments fa-5x"></i>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <p class="announcement-heading" style="font-size:60px;">102</p>
+                    <p class="announcement-text">Total Orders!</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#">
+                <div class="panel-footer announcement-bottom">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      Completed Orders
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div> <!--------/end ----> 
+      </div>
+    </div>
+	
+
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+	
+  </body>
+</html>
